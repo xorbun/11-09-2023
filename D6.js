@@ -233,13 +233,14 @@ console.log(hofinitoinomidellevariabili);
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
 
-const totale=movies.reduce((movie,som)=>parseInt(movie.Year)+som);
+const totale=movies.reduce((movie,som)=>parseInt(movie.Year)+parseInt(som));
 
 console.log(totale);
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
-  
+const finder2=movies.find((movie)=>movie.imdbID==='tt4154796');
+console.log(finder2);
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
