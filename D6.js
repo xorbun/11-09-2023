@@ -196,13 +196,16 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
   
-
- const filter=movies.find((movies)=>
- {
-  return movies.Year==="1963";
- })
- console.log(filter);
-  
+let film=movies[0];
+const finder= movies.forEach((movie)=>
+{
+  if (parseInt(movie.Year)< parseInt(film.Year))
+  {
+    film=movie;
+  }
+  return film;
+})
+  console.log(film);
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
