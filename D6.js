@@ -7,7 +7,7 @@
 
 const fusion = function(str1,str2)
 {
-  const string3= str1.slice(0,1).toUpperCase()+str2.slice(str2.length-3).toUpperCase();
+  const string3= str1.slice(0,2).toUpperCase()+str2.slice(str2.length-3).toUpperCase();
   return string3;
 }
 const test=fusion("buongiornissimo", "caffe");
