@@ -248,3 +248,6 @@ console.log(finder2);
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+const anno="2002";
+const finder3=movies.findIndex((movie)=> movie.Year===anno);
+console.log(finder3);
